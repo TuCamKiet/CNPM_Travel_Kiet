@@ -1,11 +1,13 @@
 {
-  "homepage": "http://thanhlongtruong.github.io/cnpm_travel",
+  "homepage": "https://tucamkiet.github.io/CNPM_Travel_Kiet/HomePage",
   "name": "fe_travel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@floating-ui/dom": "^1.6.7",
+    "@floating-ui/react-dom": "^2.1.1",
     "@mui/material": "^5.15.21",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
