@@ -8,12 +8,12 @@ import XemDanhSachChuyenBay from "./Components/XemDanhSachChuyenBay.js";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/CNPM_Travel_Kiet" element={<Home />} />
       <Route path="/Setting/InfoAccount" element={<Setting />} />
       <Route path="/Setting/HistoryTicket" element={<Setting />} />
       <Route path="/XemDanhSachChuyenBay" element={<XemDanhSachChuyenBay />} />
       <Route
-        path="//XemDanhSachChuyenbBay/DatChoCuaToi"
+        path="/XemDanhSachChuyenbBay/DatChoCuaToi"
         element={<DatChoCuaToi />}
       />
     </Routes>
