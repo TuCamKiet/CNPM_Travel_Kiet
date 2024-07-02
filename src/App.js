@@ -8,7 +8,7 @@ import XemDanhSachChuyenBay from "./Components/XemDanhSachChuyenBay.js";
 function App() {
   return (
     <Routes>
-      <Route path="/HomePage" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/Setting/InfoAccount" element={<Setting />} />
       <Route path="/Setting/HistoryTicket" element={<Setting />} />
       <Route path="/XemDanhSachChuyenBay" element={<XemDanhSachChuyenBay />} />
