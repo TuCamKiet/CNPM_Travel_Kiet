@@ -1,10 +1,15 @@
-import { createContext, useState, useRef } from "react";
+import { createContext, useRef, useState } from "react";
 import { format, addDays, parse } from "date-fns";
 import { vi } from "date-fns/locale";
 
 export const CONTEXT = createContext({});
-
 export const OrderProvider = ({ children }) => {
+  const [isState, setState] = useState(false);
+
+  const handState = () => {
+    setState(!isState);
+  };
+
   const [isBay, setBay] = useState(null);
   const [isDap, setDap] = useState(null);
   const [today, setToday] = useState(new Date());
@@ -44,6 +49,9 @@ export const OrderProvider = ({ children }) => {
   return (
     <CONTEXT.Provider
       value={{
+        isState,
+        setState,
+        handState,
         dialogDoiTimKiem,
         handleDialogDoiTimKiem,
         setDialogDoiTimKiem,
